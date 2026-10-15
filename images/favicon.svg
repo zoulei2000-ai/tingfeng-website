@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="听风投资">
+<title>听风投资</title>
+
+<circle cx="256" cy="256" r="256" fill="#0F2A44"/>
+<g transform="translate(100.00 104.00) scale(2.6000)">
+<path d="M60 14 C 84 34 96 64 92 88 L 60 88 Z" fill="#F6F3EC"/>
+<path d="M54 30 C 42 48 38 68 40 88 L 54 88 Z" fill="#9FA8D9"/>
+<path d="M22 98 Q 41 90 60 98 T 98 98" fill="none" stroke="#F6F3EC" stroke-width="5" stroke-linecap="round"/>
+</g>
+</svg>

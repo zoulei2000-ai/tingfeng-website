@@ -12,7 +12,9 @@
 <meta property="og:description" content="海外，再造一个中国。Another China, built overseas.">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0C0E12" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='13' fill='%23D0251B'/%3E%3Crect x='11' y='9.6' width='18' height='2.4' fill='%23fff'/%3E%3Crect x='15' y='14.6' width='14' height='2.4' fill='%23fff'/%3E%3C/svg%3E">
+<meta property="og:image" content="https://tingfeng.cn/images/og-logo.png">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- artifact:head:start -->
@@ -77,13 +79,16 @@ section[id]{scroll-margin-top:84px}
   .nav{background:var(--nav-bg);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px)}
 }
 .nav-in{display:flex;align-items:center;flex-wrap:wrap;gap:10px 32px;min-height:68px;padding-block:10px}
-.brand{display:flex;align-items:center;gap:12px;margin-right:auto;text-decoration:none}
-.mark{width:30px;height:30px;flex:none}
-.mark-sun{fill:var(--red)}
-.mark-cut{fill:var(--bg)}
-.brand-txt{display:flex;flex-direction:column}
-.brand-zh{font-family:var(--zh-display);font-weight:900;font-size:1.125rem;line-height:1;letter-spacing:.04em}
-.brand-en{margin-top:5px;font-family:var(--en-sans);font-stretch:112%;font-weight:600;font-size:.625rem;line-height:1;letter-spacing:.16em;color:var(--ink-2)}
+.brand{display:flex;align-items:center;margin-right:auto;text-decoration:none}
+.brand-logo{display:block;width:auto;height:42px}
+.logo-dark{display:none}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .logo-light{display:none}
+  :root:not([data-theme="light"]) .logo-dark{display:block}
+}
+:root[data-theme="dark"] .logo-light{display:none}
+:root[data-theme="dark"] .logo-dark{display:block}
+@media (max-width:720px){.brand-logo{height:36px}}
 .nav-links{display:flex;flex-wrap:wrap;gap:4px 28px}
 .nav-links a{position:relative;padding-block:6px;font-size:.9375rem;font-weight:500;color:var(--ink-2);text-decoration:none;transition:color .2s}
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .25s}
@@ -271,15 +276,8 @@ h2{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(1.875rem,
 <header class="nav">
   <div class="wrap nav-in">
     <a class="brand" href="#top" aria-label="听风投资 Tingfeng Investment">
-      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true">
-        <circle cx="14" cy="14" r="13" class="mark-sun"></circle>
-        <rect x="11" y="9.6" width="18" height="2.4" class="mark-cut"></rect>
-        <rect x="15" y="14.6" width="14" height="2.4" class="mark-cut"></rect>
-      </svg>
-      <span class="brand-txt">
-        <span class="brand-zh">听风投资</span>
-        <span class="brand-en">TINGFENG INVESTMENT</span>
-      </span>
+      <img class="brand-logo logo-light" src="images/logo.svg" alt="" width="451" height="103">
+      <img class="brand-logo logo-dark" src="images/logo-reverse.svg" alt="" width="451" height="103">
     </a>
     <nav class="nav-links" aria-label="主导航 Main">
       <a href="#about"><span data-l="zh">关于我们</span><span data-l="en">About</span></a>
