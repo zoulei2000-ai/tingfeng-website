@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>听风投资 Tingfeng Investment</title>
+<meta name="description" content="深圳市听风投资有限公司寻找并支持在海外创业的中国年轻人。未来是中国的大航海时代，10年左右，海外再造一个中国。Tingfeng Investment backs young Chinese founders building companies abroad.">
+<link rel="canonical" href="https://tingfeng.cn/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tingfeng.cn/">
+<meta property="og:title" content="听风投资 Tingfeng Investment">
+<meta property="og:description" content="海外，再造一个中国。Another China, built overseas.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C0E12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='13' fill='%23D0251B'/%3E%3Crect x='11' y='9.6' width='18' height='2.4' fill='%23fff'/%3E%3Crect x='15' y='14.6' width='14' height='2.4' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- artifact:head:start -->
+<style>
+/* Layout: Swiss-style grid. A label rail (3 of 12 columns) runs down the left of every section and the
+   content takes the other 9. The hero is pure type over a live clock strip for HQ and the four markets. */
+:root{
+  --bg:#FFFFFF;
+  --bg-2:#F2F3F5;
+  --ink:#0B0D10;
+  --ink-2:#5A606A;
+  --line:#E2E4E8;
+  --red:#D0251B;          /* 中国红: the only accent */
+  --on-red:#FFFFFF;
+  --dark:#0B0D10;
+  --on-dark:#F4F5F7;
+  --on-dark-2:#979EA8;
+  --dark-line:#262A31;
+  --dark-red:#FF5A4E;
+  --nav-bg:rgba(255,255,255,.84);
+
+  --zh-display:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --zh-body:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --en-sans:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+
+  --display:var(--zh-display);
+  --body:var(--zh-body);
+}
+:root[data-lang="en"]{--display:var(--en-sans);--body:var(--en-sans)}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C0E12;--bg-2:#15181E;--ink:#EDEFF2;--ink-2:#9BA2AD;--line:#252A32;--red:#FF5B4F;--on-red:#0C0E12;
+    --dark:#15181E;--on-dark:#EDEFF2;--on-dark-2:#9BA2AD;--dark-line:#2C323B;--dark-red:#FF5B4F;
+    --nav-bg:rgba(12,14,18,.84);color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C0E12;--bg-2:#15181E;--ink:#EDEFF2;--ink-2:#9BA2AD;--line:#252A32;--red:#FF5B4F;--on-red:#0C0E12;
+  --dark:#15181E;--on-dark:#EDEFF2;--on-dark-2:#9BA2AD;--dark-line:#2C323B;--dark-red:#FF5B4F;
+  --nav-bg:rgba(12,14,18,.84);color-scheme:dark;
+}
+
+/* Language switch: every bilingual pair is marked data-l="zh" / data-l="en" */
+:root[data-lang="en"] [data-l="zh"],
+:root:not([data-lang="en"]) [data-l="en"]{display:none !important}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.8;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+:root[data-lang="en"] body{line-height:1.6}
+::selection{background:var(--red);color:var(--on-red)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1240px;margin-inline:auto;padding-inline:clamp(16px,4vw,56px)}
+section[id]{scroll-margin-top:84px}
+
+/* ---------- Navigation ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+@supports ((-webkit-backdrop-filter:blur(8px)) or (backdrop-filter:blur(8px))){
+  .nav{background:var(--nav-bg);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px)}
+}
+.nav-in{display:flex;align-items:center;flex-wrap:wrap;gap:10px 32px;min-height:68px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:12px;margin-right:auto;text-decoration:none}
+.mark{width:30px;height:30px;flex:none}
+.mark-sun{fill:var(--red)}
+.mark-cut{fill:var(--bg)}
+.brand-txt{display:flex;flex-direction:column}
+.brand-zh{font-family:var(--zh-display);font-weight:900;font-size:1.125rem;line-height:1;letter-spacing:.04em}
+.brand-en{margin-top:5px;font-family:var(--en-sans);font-stretch:112%;font-weight:600;font-size:.625rem;line-height:1;letter-spacing:.16em;color:var(--ink-2)}
+.nav-links{display:flex;flex-wrap:wrap;gap:4px 28px}
+.nav-links a{position:relative;padding-block:6px;font-size:.9375rem;font-weight:500;color:var(--ink-2);text-decoration:none;transition:color .2s}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.lang{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px}
+.lang button{appearance:none;-webkit-appearance:none;padding:7px 14px;border:0;border-radius:999px;background:transparent;color:var(--ink-2);font:600 .8125rem/1 var(--en-sans);letter-spacing:.04em;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+@media (max-width:720px){
+  .nav-links{order:3;width:100%;justify-content:space-between;gap:4px 12px;padding-top:8px;border-top:1px solid var(--line)}
+  .nav-links a{font-size:.875rem}
+}
+
+/* ---------- Hero ---------- */
+.hero{padding-top:clamp(56px,10vw,136px)}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 28px;font-size:.9375rem;font-weight:500;color:var(--ink-2)}
+.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);flex:none}
+h1{margin:0;font-family:var(--display);font-weight:900;font-size:clamp(3rem,9.2vw,8.75rem);line-height:1.04;letter-spacing:-.01em;text-wrap:balance}
+:root[data-lang="en"] h1{font-weight:800;font-stretch:112%;font-size:clamp(2.25rem,7.4vw,7rem);line-height:.98;letter-spacing:-.03em}
+h1 .hl{color:var(--red)}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px 48px;align-items:end;margin-top:clamp(32px,5vw,56px)}
+.lede{max-width:30em;margin:0;font-size:clamp(1.0625rem,1.5vw,1.25rem);line-height:1.75;color:var(--ink-2)}
+:root[data-lang="en"] .lede{max-width:34em;line-height:1.6}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border:1.5px solid transparent;border-radius:999px;font-size:.9375rem;font-weight:600;line-height:1.2;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.btn .arr{transition:transform .25s}
+.btn:hover .arr{transform:translateX(3px)}
+.btn-primary{background:var(--ink);color:var(--bg)}
+.btn-primary:hover{background:var(--red);color:var(--on-red)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+@media (max-width:820px){.hero-foot{grid-template-columns:minmax(0,1fr)}}
+
+/* live clocks */
+.clocks{margin-top:clamp(56px,8vw,104px);border-top:1px solid var(--ink)}
+.clocks-head{display:flex;align-items:center;gap:10px;padding-block:14px;font-size:.8125rem;font-weight:600}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--red);flex:none;animation:pulse 2.4s ease-in-out infinite}
+.clock-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line)}
+.clock{min-width:0;padding:18px 18px 22px;background:var(--bg)}
+.clock:first-child{padding-left:0}
+.clock-city{font-size:.9375rem;font-weight:600;line-height:1.4}
+.clock-time{margin-top:6px;font-family:var(--en-sans);font-stretch:112%;font-weight:700;font-size:clamp(1.875rem,3.2vw,2.75rem);line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.clock.hq .clock-time{color:var(--red)}
+.colon{animation:blink 2s steps(1) infinite}
+.clock-meta{margin-top:6px;font-family:var(--mono);font-size:.75rem;line-height:1.4;color:var(--ink-2)}
+.clock-meta b{font-weight:500}
+@keyframes blink{50%{opacity:.2}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@media (max-width:760px){
+  .clock-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .clock.hq{grid-column:1 / -1}
+  .clock,.clock:first-child{padding:14px 12px 16px 0}
+  .clock:nth-child(odd):not(.hq){padding-left:14px}
+}
+
+/* ---------- Sections ---------- */
+.section{padding-block:clamp(80px,11vw,152px);border-top:1px solid var(--line)}
+.sec{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:28px clamp(24px,4vw,64px)}
+.sec-body{min-width:0}
+.side{position:sticky;top:100px;align-self:start}
+.side-main{display:flex;align-items:center;gap:10px;margin:0;font-size:.9375rem;font-weight:700}
+.side-main::before{content:"";width:8px;height:8px;background:var(--red);flex:none}
+.side-sub{margin:2px 0 0 18px;font-size:.8125rem;color:var(--ink-2)}
+@media (max-width:900px){
+  .sec{grid-template-columns:minmax(0,1fr)}
+  .side{position:static}
+}
+h2{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(1.875rem,4vw,3.375rem);line-height:1.28;letter-spacing:-.005em;text-wrap:balance}
+:root[data-lang="en"] h2{font-stretch:106%;line-height:1.08;letter-spacing:-.025em}
+.intro{max-width:34em;margin:24px 0 0;font-size:1.125rem;color:var(--ink-2)}
+
+/* About */
+.prose{display:grid;gap:1em;max-width:36em;margin-top:clamp(28px,4vw,44px)}
+.prose p{margin:0;font-size:1.125rem;color:var(--ink-2)}
+.prose p:first-child{color:var(--ink)}
+.groups{display:grid;gap:clamp(48px,6vw,72px);margin-top:clamp(56px,7vw,96px)}
+.group h3{margin:0 0 20px;font-size:.8125rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px clamp(20px,3vw,40px);margin:0;padding:0;list-style:none}
+.items li{min-width:0;padding-top:20px;border-top:2px solid var(--ink)}
+.items h4{margin:0;font-family:var(--display);font-size:1.25rem;font-weight:700;line-height:1.4}
+:root[data-lang="en"] .items h4{font-stretch:104%;font-size:1.1875rem;line-height:1.3}
+.items p{margin:10px 0 0;font-size:.96875rem;line-height:1.7;color:var(--ink-2)}
+@media (max-width:760px){.items{grid-template-columns:minmax(0,1fr)}}
+
+/* Markets */
+.markets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:clamp(40px,5vw,64px)}
+.market{display:flex;flex-direction:column;gap:16px;min-width:0;padding:clamp(24px,3vw,36px);background:var(--bg-2);border-radius:4px}
+.market-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.market h3{margin:0;font-family:var(--display);font-weight:900;font-size:clamp(1.875rem,3vw,2.5rem);line-height:1.15;transition:color .2s}
+:root[data-lang="en"] .market h3{font-weight:800;font-stretch:112%;font-size:clamp(1.5rem,2.4vw,2rem);letter-spacing:-.02em}
+.market:hover h3{color:var(--red)}
+.alt-name{font-family:var(--mono);font-size:.75rem;color:var(--ink-2)}
+.market .desc{margin:0;font-size:.96875rem;line-height:1.7;color:var(--ink-2)}
+.cities{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:auto 0 0;padding:8px 0 0;list-style:none}
+.cities .lbl{margin-right:4px;font-size:.75rem;color:var(--ink-2)}
+.cities li:not(.lbl){padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--bg);font-size:.8125rem;line-height:1.5}
+@media (max-width:640px){.markets{grid-template-columns:minmax(0,1fr)}}
+
+/* Team */
+.person{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.portrait{position:relative;display:flex;align-items:flex-end;aspect-ratio:4/5;max-width:100%;padding:18px;overflow:hidden;border-radius:4px;background:var(--ink);color:var(--bg)}
+.portrait::after{content:"";position:absolute;top:18px;right:18px;width:14px;height:14px;background:var(--red)}
+.portrait b{font-family:var(--en-sans);font-stretch:125%;font-weight:800;font-size:4rem;line-height:.9;letter-spacing:-.04em}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.person-body{min-width:0}
+.role{margin:0;font-size:.875rem;font-weight:600;color:var(--red)}
+.name{margin:6px 0 22px;font-family:var(--display);font-weight:900;font-size:clamp(2.25rem,4.5vw,3.5rem);line-height:1.1;letter-spacing:.02em}
+:root[data-lang="en"] .name{font-weight:800;font-stretch:112%;letter-spacing:-.03em}
+.name small{margin-left:14px;font-family:var(--en-sans);font-weight:500;font-size:1rem;letter-spacing:0;color:var(--ink-2)}
+:root[data-lang="en"] .name small{font-family:var(--zh-body);font-stretch:100%}
+.bio p{max-width:34em;margin:0 0 .9em;color:var(--ink-2)}
+.cv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 24px;margin:24px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:.9375rem}
+.cv dt{padding-top:.15em;font-size:.8125rem;font-weight:600;color:var(--ink-2)}
+.cv dd{margin:0;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin:clamp(48px,6vw,80px) 0 0;background:var(--line);border-block:1px solid var(--line)}
+.stats>div{display:flex;flex-direction:column-reverse;justify-content:flex-end;min-width:0;padding:26px 20px 28px 24px;background:var(--bg)}
+.stats>div:first-child{padding-left:0}
+.stats dt{margin-top:10px;font-size:.9375rem;line-height:1.5;color:var(--ink-2)}
+.stats dd{margin:0;font-family:var(--en-sans);font-stretch:118%;font-weight:800;font-size:clamp(2.75rem,6vw,5rem);line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stats dd small{margin-left:6px;font-family:var(--body);font-stretch:100%;font-size:.3em;font-weight:600;letter-spacing:0;color:var(--ink-2)}
+.stats dd small.pre{margin:0 6px 0 0}
+.stats>div:first-child dd{color:var(--red)}
+@media (max-width:640px){
+  .person{grid-template-columns:minmax(0,1fr)}
+  .portrait{max-width:200px}
+  .stats{grid-template-columns:minmax(0,1fr)}
+  .stats>div{padding-left:0}
+}
+
+/* Contact */
+.contact{background:var(--dark);color:var(--on-dark)}
+.section.contact{border-top:0}
+.contact .side-main::before{background:var(--dark-red)}
+.contact .side-sub,.contact .intro{color:var(--on-dark-2)}
+.contact :focus-visible{outline-color:var(--dark-red)}
+.mail-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:clamp(36px,5vw,56px)}
+.mail{display:inline-block;max-width:100%;padding-bottom:6px;font-family:var(--en-sans);font-stretch:106%;font-weight:700;font-size:clamp(1.5rem,4.6vw,3.5rem);line-height:1.1;letter-spacing:-.02em;color:var(--on-dark);text-decoration:none;overflow-wrap:anywhere;background-image:linear-gradient(var(--dark-red),var(--dark-red));background-repeat:no-repeat;background-position:0 100%;background-size:100% 2px;transition:color .2s}
+.mail:hover{color:var(--dark-red)}
+.copy{appearance:none;-webkit-appearance:none;padding:10px 18px;border:1px solid var(--dark-line);border-radius:999px;background:transparent;color:var(--on-dark);font:600 .8125rem/1.2 var(--body);cursor:pointer;transition:border-color .2s}
+.copy:hover{border-color:var(--on-dark-2)}
+.copy .st-done,.copy .st-sel{display:none}
+.copy[data-state="done"] .st-idle,.copy[data-state="sel"] .st-idle{display:none}
+.copy[data-state="done"] .st-done,.copy[data-state="sel"] .st-sel{display:inline}
+.where{display:flex;flex-wrap:wrap;gap:8px 32px;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--dark-line);font-size:.9375rem}
+.where div{display:flex;align-items:baseline;gap:12px}
+.where dt{font-size:.8125rem;font-weight:600;color:var(--on-dark-2)}
+.where dd{margin:0}
+
+/* Footer */
+.footer{border-top:1px solid var(--line)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:26px 32px;font-size:.8125rem;line-height:1.6;color:var(--ink-2)}
+.foot-in p{margin:0}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
+</style>
+<script>
+/* Language: ?lang=en, #en, saved choice, else Chinese */
+(function(){
+  var l='zh';
+  try{var s=localStorage.getItem('tf-lang');if(s==='en'||s==='zh'){l=s;}}catch(e){}
+  try{var q=new URLSearchParams(location.search).get('lang');if(q==='en'||q==='zh'){l=q;}}catch(e){}
+  if(location.hash==='#en'||location.hash==='#zh'){l=location.hash.slice(1);}
+  var r=document.documentElement;
+  r.setAttribute('data-lang',l);
+  r.setAttribute('lang',l==='en'?'en':'zh-CN');
+})();
+/* Fonts load without blocking the first paint; system fonts stand in until they arrive */
+(function(){
+  var f=document.createElement('link');
+  f.rel='stylesheet';
+  f.href='https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@700;900&display=swap';
+  document.head.appendChild(f);
+})();
+</script>
+<!-- artifact:head:end -->
+</head>
+<body>
+
+<!-- ============ 导航 Navigation ============ -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="听风投资 Tingfeng Investment">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true">
+        <circle cx="14" cy="14" r="13" class="mark-sun"></circle>
+        <rect x="11" y="9.6" width="18" height="2.4" class="mark-cut"></rect>
+        <rect x="15" y="14.6" width="14" height="2.4" class="mark-cut"></rect>
+      </svg>
+      <span class="brand-txt">
+        <span class="brand-zh">听风投资</span>
+        <span class="brand-en">TINGFENG INVESTMENT</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="主导航 Main">
+      <a href="#about"><span data-l="zh">关于我们</span><span data-l="en">About</span></a>
+      <a href="#markets"><span data-l="zh">投资方向</span><span data-l="en">Focus</span></a>
+      <a href="#team"><span data-l="zh">团队</span><span data-l="en">Team</span></a>
+      <a href="#contact"><span data-l="zh">联系我们</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="语言 Language">
+      <button type="button" id="lang-zh" data-set-lang="zh" aria-pressed="true">中</button>
+      <button type="button" id="lang-en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 首屏 Hero ============ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="kicker"><span data-l="zh">未来是中国的大航海时代</span><span data-l="en">The future is China’s age of sail</span></p>
+    <h1>
+      <span data-l="zh">海外，<br>再造一个<span class="hl">中国</span></span>
+      <span data-l="en">Another <span class="hl">China</span>,<br>built overseas.</span>
+    </h1>
+    <div class="hero-foot">
+      <p class="lede">
+        <span data-l="zh">听风投资寻找并支持在海外创业的中国年轻人。从美国到中东，从印尼到拉美，与敢于远航的人一起出发。</span>
+        <span data-l="en">Tingfeng Investment finds and backs young Chinese founders who build companies abroad, from the United States and the Middle East to Indonesia and Latin America.</span>
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact"><span data-l="zh">联系我们</span><span data-l="en">Get in touch</span><span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#about"><span data-l="zh">关于听风</span><span data-l="en">About Tingfeng</span></a>
+      </div>
+    </div>
+
+    <div class="clocks" aria-label="总部与重点市场当地时间 Local time at HQ and in focus markets">
+      <div class="clocks-head">
+        <span class="pulse" aria-hidden="true"></span>
+        <span data-l="zh">此刻 · 总部与重点市场</span><span data-l="en">Right now · HQ and focus markets</span>
+      </div>
+      <div class="clock-grid">
+        <div class="clock hq" data-tz="Asia/Shanghai">
+          <div class="clock-city"><span data-l="zh">深圳</span><span data-l="en">Shenzhen</span></div>
+          <div class="clock-time"><span class="hh">--</span><span class="colon">:</span><span class="mm">--</span></div>
+          <div class="clock-meta"><span data-l="zh">总部 · UTC+8</span><span data-l="en">HQ · UTC+8</span></div>
+        </div>
+        <div class="clock" data-tz="America/Los_Angeles">
+          <div class="clock-city"><span data-l="zh">洛杉矶</span><span data-l="en">Los Angeles</span></div>
+          <div class="clock-time"><span class="hh">--</span><span class="colon">:</span><span class="mm">--</span></div>
+          <div class="clock-meta"><span data-l="zh">时差 <b data-off>−15</b> 小时</span><span data-l="en"><b data-off>−15</b> h from Shenzhen</span></div>
+        </div>
+        <div class="clock" data-tz="Asia/Dubai">
+          <div class="clock-city"><span data-l="zh">迪拜</span><span data-l="en">Dubai</span></div>
+          <div class="clock-time"><span class="hh">--</span><span class="colon">:</span><span class="mm">--</span></div>
+          <div class="clock-meta"><span data-l="zh">时差 <b data-off>−4</b> 小时</span><span data-l="en"><b data-off>−4</b> h from Shenzhen</span></div>
+        </div>
+        <div class="clock" data-tz="Asia/Jakarta">
+          <div class="clock-city"><span data-l="zh">雅加达</span><span data-l="en">Jakarta</span></div>
+          <div class="clock-time"><span class="hh">--</span><span class="colon">:</span><span class="mm">--</span></div>
+          <div class="clock-meta"><span data-l="zh">时差 <b data-off>−1</b> 小时</span><span data-l="en"><b data-off>−1</b> h from Shenzhen</span></div>
+        </div>
+        <div class="clock" data-tz="America/Sao_Paulo">
+          <div class="clock-city"><span data-l="zh">圣保罗</span><span data-l="en">São Paulo</span></div>
+          <div class="clock-time"><span class="hh">--</span><span class="colon">:</span><span class="mm">--</span></div>
+          <div class="clock-meta"><span data-l="zh">时差 <b data-off>−11</b> 小时</span><span data-l="en"><b data-off>−11</b> h from Shenzhen</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关于我们 About ============ -->
+<section class="section" id="about">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="side-main"><span data-l="zh">关于我们</span><span data-l="en">About</span></p>
+      <p class="side-sub"><span data-l="zh">About</span><span data-l="en">关于我们</span></p>
+    </div>
+    <div class="sec-body">
+      <h2>
+        <span data-l="zh">我们寻找勇往直前、敢于在异国他乡创业的中国年轻人。</span>
+        <span data-l="en">We look for young Chinese founders bold enough to build a company far from home.</span>
+      </h2>
+      <div class="prose">
+        <p data-l="zh">四十多年来，世界走进中国。接下来的十年，轮到中国的创业者走向世界。</p>
+        <p data-l="zh">未来是中国的大航海时代。新一代创业者带着在国内练就的产品能力、供应链和运营效率，去美国、中东、东南亚和拉美开公司、建品牌、办工厂，在当地招聘，在当地扎根。</p>
+        <p data-l="zh">我们相信，10年左右，他们会在海外再造一个中国。听风投资希望从他们出发的第一天起，就站在他们身边。</p>
+
+        <p data-l="en">For more than forty years, the world came to China. In the decade ahead, Chinese founders will go out to the world.</p>
+        <p data-l="en">The future is China’s age of sail. A new generation is taking the product skills, supply chains and operating speed they built at home to the United States, the Middle East, Southeast Asia and Latin America. They start companies, build brands and open factories, hire local teams and put down roots.</p>
+        <p data-l="en">We believe that in about ten years they will have built another China overseas. Tingfeng wants to be beside them from the day they set out.</p>
+      </div>
+
+      <div class="groups">
+        <div class="group">
+          <h3><span data-l="zh">我们寻找</span><span data-l="en">What we look for</span></h3>
+          <ul class="items">
+            <li>
+              <h4><span data-l="zh">敢出发的人</span><span data-l="en">Founders who go</span></h4>
+              <p><span data-l="zh">愿意离开舒适区，在陌生的语言、法律和文化里从零开始，并且坚持下去。</span><span data-l="en">People willing to start from zero in an unfamiliar language, legal system and culture, and to stay the course.</span></p>
+            </li>
+            <li>
+              <h4><span data-l="zh">中国能力，当地需求</span><span data-l="en">China’s strengths, local needs</span></h4>
+              <p><span data-l="zh">把中国的产品、供应链和数字化能力，用来解决当地市场真实存在的问题。</span><span data-l="en">Companies that put Chinese products, supply chains and digital know-how to work on real problems in their new market.</span></p>
+            </li>
+            <li>
+              <h4><span data-l="zh">扎根当地</span><span data-l="en">Built to stay</span></h4>
+              <p><span data-l="zh">组建当地团队，打造当地品牌，做长期的生意，而不是一次性的套利。</span><span data-l="en">Teams that hire locally, build local brands and run a long-term business rather than a one-off arbitrage.</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3><span data-l="zh">我们带来</span><span data-l="en">What we bring</span></h3>
+          <ul class="items">
+            <li>
+              <h4><span data-l="zh">资本</span><span data-l="en">Capital</span></h4>
+              <p><span data-l="zh">在创业者最需要的阶段投入资金，陪伴公司长期成长。</span><span data-l="en">Funding at the stage founders need it most, with the patience to grow alongside the company.</span></p>
+            </li>
+            <li>
+              <h4><span data-l="zh">一手的市场判断</span><span data-l="en">First-hand market judgment</span></h4>
+              <p><span data-l="zh">创始合伙人实地调研过66个国家，帮助你更早看清一个市场的机会与陷阱。</span><span data-l="en">Our founding partner has researched 66 countries on the ground and can help you see a market’s openings and traps earlier.</span></p>
+            </li>
+            <li>
+              <h4><span data-l="zh">大企业的经验</span><span data-l="en">Big-company experience</span></h4>
+              <p><span data-l="zh">在腾讯、华为、平安、万达等企业多年的经营经验，帮助团队少走弯路。</span><span data-l="en">Years of operating experience at Tencent, Huawei, Ping An and Wanda, to help your team avoid costly detours.</span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 投资方向 Focus markets ============ -->
+<section class="section" id="markets">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="side-main"><span data-l="zh">投资方向</span><span data-l="en">Focus</span></p>
+      <p class="side-sub"><span data-l="zh">Focus markets</span><span data-l="en">投资方向</span></p>
+    </div>
+    <div class="sec-body">
+      <h2><span data-l="zh">从深圳出发，去往世界</span><span data-l="en">From Shenzhen, out to the world</span></h2>
+      <p class="intro"><span data-l="zh">我们重点关注美国，以及中东、印尼、拉美等新兴市场的投资机遇，也持续留意其他正在打开的市场。</span><span data-l="en">We focus on the United States and on emerging markets such as the Middle East, Indonesia and Latin America, and keep watching the markets that open next.</span></p>
+
+      <div class="markets">
+        <article class="market">
+          <div class="market-top">
+            <h3><span data-l="zh">美国</span><span data-l="en">United States</span></h3>
+            <span class="alt-name"><span data-l="zh">United States</span><span data-l="en">美国</span></span>
+          </div>
+          <p class="desc"><span data-l="zh">全球最大的消费市场与资本市场，也是中国品牌走向全球的试金石。</span><span data-l="en">The world’s largest consumer and capital market, and the proving ground for Chinese brands going global.</span></p>
+          <ul class="cities">
+            <li class="lbl"><span data-l="zh">代表城市</span><span data-l="en">Key cities</span></li>
+            <li><span data-l="zh">洛杉矶</span><span data-l="en">Los Angeles</span></li>
+            <li><span data-l="zh">纽约</span><span data-l="en">New York</span></li>
+          </ul>
+        </article>
+
+        <article class="market">
+          <div class="market-top">
+            <h3><span data-l="zh">中东</span><span data-l="en">Middle East</span></h3>
+            <span class="alt-name"><span data-l="zh">Middle East</span><span data-l="en">中东</span></span>
+          </div>
+          <p class="desc"><span data-l="zh">资金充裕、人口年轻，基础设施与数字化建设正在大规模推进。</span><span data-l="en">Deep pools of capital, a young population, and infrastructure and digital projects under way at scale.</span></p>
+          <ul class="cities">
+            <li class="lbl"><span data-l="zh">代表城市</span><span data-l="en">Key cities</span></li>
+            <li><span data-l="zh">迪拜</span><span data-l="en">Dubai</span></li>
+            <li><span data-l="zh">利雅得</span><span data-l="en">Riyadh</span></li>
+          </ul>
+        </article>
+
+        <article class="market">
+          <div class="market-top">
+            <h3><span data-l="zh">印尼</span><span data-l="en">Indonesia</span></h3>
+            <span class="alt-name"><span data-l="zh">Indonesia</span><span data-l="en">印尼</span></span>
+          </div>
+          <p class="desc"><span data-l="zh">近2.8亿人口，东南亚最大的经济体，消费与互联网仍在快速增长。</span><span data-l="en">Nearly 280 million people in Southeast Asia’s largest economy, where consumer spending and internet use are still growing fast.</span></p>
+          <ul class="cities">
+            <li class="lbl"><span data-l="zh">代表城市</span><span data-l="en">Key cities</span></li>
+            <li><span data-l="zh">雅加达</span><span data-l="en">Jakarta</span></li>
+            <li><span data-l="zh">泗水</span><span data-l="en">Surabaya</span></li>
+          </ul>
+        </article>
+
+        <article class="market">
+          <div class="market-top">
+            <h3><span data-l="zh">拉美</span><span data-l="en">Latin America</span></h3>
+            <span class="alt-name"><span data-l="zh">Latin America</span><span data-l="en">拉美</span></span>
+          </div>
+          <p class="desc"><span data-l="zh">6亿多人口，电商、金融科技与制造业转移正在带来新的机会。</span><span data-l="en">More than 600 million people, with new openings in e-commerce, fintech and nearshore manufacturing.</span></p>
+          <ul class="cities">
+            <li class="lbl"><span data-l="zh">代表城市</span><span data-l="en">Key cities</span></li>
+            <li><span data-l="zh">圣保罗</span><span data-l="en">São Paulo</span></li>
+            <li><span data-l="zh">墨西哥城</span><span data-l="en">Mexico City</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 团队 Team ============ -->
+<section class="section" id="team">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="side-main"><span data-l="zh">团队</span><span data-l="en">Team</span></p>
+      <p class="side-sub"><span data-l="zh">Team</span><span data-l="en">团队</span></p>
+    </div>
+    <div class="sec-body">
+      <article class="person">
+        <!-- 换成照片：把下面的 <b>ZL</b> 替换为 <img src="zoulei.jpg" alt="邹磊"> -->
+        <div class="portrait" role="img" aria-label="邹磊 Zou Lei"><b>ZL</b></div>
+
+        <div class="person-body">
+          <p class="role"><span data-l="zh">创始合伙人</span><span data-l="en">Founding Partner</span></p>
+          <h2 class="name"><span data-l="zh">邹磊<small>Zou Lei</small></span><span data-l="en">Zou Lei<small>邹磊</small></span></h2>
+          <div class="bio">
+            <p data-l="zh">上海交通大学本科毕业，曾在腾讯、华为、平安、万达等企业工作多年，经历横跨互联网、通信科技、金融与商业地产。</p>
+            <p data-l="zh">1998年赴印度，为华为调研印度市场，此后近三十年持续关注中国品牌出海。</p>
+            <p data-l="zh">重点关注美国，以及中东、印尼、拉美等新兴市场的投资机遇，至今已实地调研66个国家的市场。</p>
+
+            <p data-l="en">A graduate of Shanghai Jiao Tong University, Zou Lei spent many years at Tencent, Huawei, Ping An and Wanda, working across the internet, telecom technology, finance and commercial real estate.</p>
+            <p data-l="en">The overseas story began in 1998, with a trip to India to research the market for Huawei. Nearly thirty years of following Chinese brands abroad came after it.</p>
+            <p data-l="en">The focus today is the United States and emerging markets such as the Middle East, Indonesia and Latin America. To date, Zou Lei has researched 66 country markets on the ground.</p>
+          </div>
+          <dl class="cv">
+            <dt><span data-l="zh">教育</span><span data-l="en">Education</span></dt>
+            <dd><span data-l="zh">上海交通大学 · 本科</span><span data-l="en">Shanghai Jiao Tong University, bachelor’s</span></dd>
+            <dt><span data-l="zh">履历</span><span data-l="en">Career</span></dt>
+            <dd><span data-l="zh">腾讯 · 华为 · 平安 · 万达</span><span data-l="en">Tencent · Huawei · Ping An · Wanda</span></dd>
+          </dl>
+        </div>
+      </article>
+
+      <dl class="stats">
+        <div>
+          <dt><span data-l="zh">实地调研过的国家市场</span><span data-l="en">Country markets researched on the ground</span></dt>
+          <dd>66<small><span data-l="zh">国</span><span data-l="en">countries</span></small></dd>
+        </div>
+        <div>
+          <dt><span data-l="zh">持续关注中国品牌出海</span><span data-l="en">Following Chinese brands abroad</span></dt>
+          <dd><small class="pre"><span data-l="zh">近</span><span data-l="en">~</span></small>30<small><span data-l="zh">年</span><span data-l="en">years</span></small></dd>
+        </div>
+        <div>
+          <dt><span data-l="zh">赴印度为华为调研市场</span><span data-l="en">Market research in India for Huawei</span></dt>
+          <dd>1998</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 联系我们 Contact ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="side-main"><span data-l="zh">联系我们</span><span data-l="en">Contact</span></p>
+      <p class="side-sub"><span data-l="zh">Contact</span><span data-l="en">联系我们</span></p>
+    </div>
+    <div class="sec-body">
+      <h2><span data-l="zh">正在海外创业，或准备出发？</span><span data-l="en">Building abroad, or getting ready to go?</span></h2>
+      <p class="intro"><span data-l="zh">欢迎来信介绍你的项目。附上一页项目简介或商业计划书，能帮助我们更快了解你。同行的投资机构与合作伙伴，也欢迎联系。</span><span data-l="en">Write to us about your company. A one-page summary or a pitch deck helps us understand it faster. Fellow investors and partners are welcome to get in touch too.</span></p>
+      <div class="mail-row">
+        <a class="mail" href="mailto:tingfeng@tingfeng.cn"><span id="mail-text">tingfeng@tingfeng.cn</span></a>
+        <button type="button" class="copy" id="copy-email">
+          <span class="st-idle"><span data-l="zh">复制邮箱</span><span data-l="en">Copy email</span></span>
+          <span class="st-done"><span data-l="zh">已复制</span><span data-l="en">Copied</span></span>
+          <span class="st-sel"><span data-l="zh">已选中，请手动复制</span><span data-l="en">Selected, press Ctrl/⌘+C</span></span>
+        </button>
+      </div>
+      <dl class="where">
+        <div><dt><span data-l="zh">联系邮箱</span><span data-l="en">Email</span></dt><dd>tingfeng@tingfeng.cn</dd></div>
+        <div><dt><span data-l="zh">所在地</span><span data-l="en">Based in</span></dt><dd><span data-l="zh">中国 · 深圳</span><span data-l="en">Shenzhen, China</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 页脚 Footer ============ -->
+<footer class="footer">
+  <div class="wrap foot-in">
+    <p>© <span id="year">2026</span> 深圳市听风投资有限公司 · Shenzhen Tingfeng Investment Co., Ltd.</p>
+    <p><span data-l="zh">本网站内容仅供参考，不构成任何投资建议或要约。</span><span data-l="en">Content on this site is for information only and is not investment advice or an offer.</span></p>
+    <!-- 如网站托管在中国大陆服务器，需在此处展示 ICP 备案号，例如：
+    <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备XXXXXXXX号</a></p> -->
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+
+  /* ---------- language toggle ---------- */
+  var btns=[].slice.call(document.querySelectorAll('[data-set-lang]'));
+  function sync(l){btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-set-lang')===l));});}
+  function setLang(l){
+    root.setAttribute('data-lang',l);
+    root.setAttribute('lang',l==='en'?'en':'zh-CN');
+    sync(l);
+    try{localStorage.setItem('tf-lang',l);}catch(e){}
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-set-lang'));});});
+  sync(root.getAttribute('data-lang')==='en'?'en':'zh');
+
+  var y=document.getElementById('year');
+  if(y){y.textContent=String(new Date().getFullYear());}
+
+  /* ---------- live clocks: local wall time in each zone, offset from Shenzhen (handles daylight saving) ---------- */
+  var HQ='Asia/Shanghai',fmts={};
+  function wall(tz,d){
+    var f=fmts[tz]||(fmts[tz]=new Intl.DateTimeFormat('en-US',{timeZone:tz,year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric',hourCycle:'h23'}));
+    var p={};
+    f.formatToParts(d).forEach(function(x){p[x.type]=x.value;});
+    return Date.UTC(+p.year,+p.month-1,+p.day,(+p.hour)%24,+p.minute);
+  }
+  function two(n){return (n<10?'0':'')+n;}
+  var clocks=[].slice.call(document.querySelectorAll('.clock[data-tz]'));
+  function tick(){
+    var now=new Date(),hq;
+    try{hq=wall(HQ,now);}catch(e){return;}
+    clocks.forEach(function(c){
+      var w=wall(c.getAttribute('data-tz'),now),t=new Date(w);
+      c.querySelector('.hh').textContent=two(t.getUTCHours());
+      c.querySelector('.mm').textContent=two(t.getUTCMinutes());
+      var h=Math.round((w-hq)/36e5*2)/2;
+      var s=(h>0?'+':(h<0?'−':''))+Math.abs(h);
+      [].slice.call(c.querySelectorAll('[data-off]')).forEach(function(n){n.textContent=s;});
+    });
+  }
+  tick();
+  setInterval(tick,15000);
+
+  /* ---------- copy email ---------- */
+  var copyBtn=document.getElementById('copy-email');
+  if(copyBtn){
+    var timer=null;
+    var show=function(state){
+      copyBtn.setAttribute('data-state',state);
+      clearTimeout(timer);
+      timer=setTimeout(function(){copyBtn.removeAttribute('data-state');},2600);
+    };
+    var selectText=function(){
+      var n=document.getElementById('mail-text');
+      if(!n||!window.getSelection){return;}
+      var range=document.createRange();
+      range.selectNodeContents(n);
+      var sel=window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      show('sel');
+    };
+    copyBtn.addEventListener('click',function(){
+      var addr='tingfeng@tingfeng.cn';
+      try{
+        if(navigator.clipboard&&navigator.clipboard.writeText){
+          navigator.clipboard.writeText(addr).then(function(){show('done');},selectText);
+        }else{selectText();}
+      }catch(e){selectText();}
+    });
+  }
+})();
+</script>
+</body>
+</html>
